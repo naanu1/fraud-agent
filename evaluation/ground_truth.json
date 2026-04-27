@@ -1,0 +1,70 @@
+{
+  "subjects": [
+    {
+      "name": "Timothy Overturf",
+      "context": "CEO of Sisu Capital",
+      "required_facts": [
+        "Founded Sisu Capital in 2013 at age 18",
+        "SEC charged him on August 1 2023",
+        "Father Hans Overturf was suspended California advisor",
+        "Hans allowed to advise clients despite suspension",
+        "Timothy received 858000 in owner draws",
+        "Sisu registration revoked January 2021",
+        "Timothy continued advising after revocation",
+        "Hans accused in 2004 of 730000 elderly couple fraud",
+        "Hans now lives in Switzerland",
+        "Bought Arcata Theatre Lounge with Joseph Ostini via Joseppis LLC",
+        "Pitched crypto-bank scheme to community bank"
+      ],
+      "required_flag_categories": [
+        "SEC Enforcement Action",
+        "Financial Fraud",
+        "Operating After Suspension",
+        "Undisclosed Relationship",
+        "Family Fraud History"
+      ],
+      "pass_threshold": 0.70
+    },
+    {
+      "name": "Sam Bankman-Fried",
+      "context": "Founder and CEO of FTX cryptocurrency exchange",
+      "required_facts": [
+        "Founded FTX in 2019",
+        "FTX collapsed in November 2022",
+        "Arrested in Bahamas in December 2022",
+        "Charged with wire fraud and conspiracy",
+        "Alameda Research was sister trading firm",
+        "Customer funds were misused",
+        "Convicted in October 2023",
+        "Sentenced to 25 years in prison"
+      ],
+      "required_flag_categories": [
+        "Financial Fraud",
+        "Legal Proceeding",
+        "SEC Enforcement Action",
+        "Asset Concealment"
+      ],
+      "pass_threshold": 0.70
+    },
+    {
+      "name": "Elizabeth Holmes",
+      "context": "Founder and CEO of Theranos",
+      "required_facts": [
+        "Founded Theranos in 2003",
+        "Claimed finger-prick blood tests could detect diseases",
+        "SEC charged Theranos with fraud in 2018",
+        "Convicted of wire fraud in January 2022",
+        "Theranos blood tests were inaccurate",
+        "Deceived investors and patients",
+        "Sentenced to 11 years in prison"
+      ],
+      "required_flag_categories": [
+        "Financial Fraud",
+        "Legal Proceeding",
+        "SEC Enforcement Action",
+        "Misrepresentation"
+      ],
+      "pass_threshold": 0.70
+    }
+  ]
+}

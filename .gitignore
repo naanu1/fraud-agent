@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Environment variables — NEVER commit API keys
+.env
+.env.*
+!.env.example
+
+# Outputs and run data (local investigation results)
+outputs/
+server.log
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node / Next.js frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+frontend/.env.*.local
+
+# Test scripts
+test_data_flow.py
+test_simple.py
+verify_neo4j.py
+
+# Misc
+*.credentials
+*.cert
+*.key

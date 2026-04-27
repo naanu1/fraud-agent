@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --surface2: #1c2128;
+  --border: #30363d;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #1f6feb;
+  --critical: #f85149;
+  --high: #ff7b72;
+  --medium: #e3b341;
+  --low: #56d364;
+  --clean: #58a6ff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+
+@keyframes pulse-dot {
+  0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+  40%            { transform: scale(1);   opacity: 1;   }
+}
+@keyframes slide-in {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+
+.animate-slide-in { animation: slide-in 0.3s ease both; }
+.animate-fade-in  { animation: fade-in  0.4s ease both; }
+
+.thinking-dot {
+  display: inline-block;
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--accent);
+  animation: pulse-dot 1.4s infinite ease-in-out;
+}
+.thinking-dot:nth-child(2) { animation-delay: 0.2s; }
+.thinking-dot:nth-child(3) { animation-delay: 0.4s; }
+
+.shimmer {
+  background: linear-gradient(90deg, var(--surface) 25%, var(--surface2) 50%, var(--surface) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.badge-CRITICAL { background: rgba(248,81,73,0.15);  color: var(--critical); border: 1px solid rgba(248,81,73,0.3);  }
+.badge-HIGH     { background: rgba(255,123,114,0.15); color: var(--high);     border: 1px solid rgba(255,123,114,0.3); }
+.badge-MEDIUM   { background: rgba(227,179,65,0.15);  color: var(--medium);   border: 1px solid rgba(227,179,65,0.3);  }
+.badge-LOW      { background: rgba(86,211,100,0.15);  color: var(--low);      border: 1px solid rgba(86,211,100,0.3);  }
+.badge-CLEAN    { background: rgba(88,166,255,0.15);  color: var(--clean);    border: 1px solid rgba(88,166,255,0.3);  }
+.badge-RUNNING  { background: rgba(31,111,235,0.15);  color: var(--accent);   border: 1px solid rgba(31,111,235,0.3);  }
